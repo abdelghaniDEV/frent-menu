@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="text-white  container  my-[20px]">
       <Header />
-      <div className="flex gap-[20px] items-start mt-[20px] md:mt-[1\0vh]   ">
+      <div className="flex gap-[20px] items-start mt-[20px] md:mt-[1\0vh] ">
         <div className="md:w-[450px] w-full ">
           <div className="bg-[#7B5D49] border-[1px] text-[15px]  justify-between p-2  border-b-[1px]">
             <ul className="flex items-center flex-wrap gap-2 justify-center font- font-[500] ">
