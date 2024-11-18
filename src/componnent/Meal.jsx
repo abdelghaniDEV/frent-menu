@@ -1,10 +1,4 @@
 import React, { useEffect, useState } from "react";
-import pic1 from "../assets/pic-1@4xn.png";
-import burger from "../assets/plahh.png";
-import FriedShrimp from "../assets/fried Shrimp.webp";
-import ketshup from "../assets/Ket.png";
-import may from "../assets/mayy.jpg";
-import meal02 from "../assets/meal02.jpg";
 import { motion } from "motion/react";
 
 

@@ -1,5 +1,4 @@
 import React from "react";
-import pic1 from "../assets/pic-1@4xn.png";
 import { motion } from "motion/react";
 
 function MealCart({product , setProduct}) {
