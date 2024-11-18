@@ -6,27 +6,10 @@ import ketshup from "../assets/Ket.png";
 import may from "../assets/mayy.jpg";
 import meal02 from "../assets/meal02.jpg";
 import { motion } from "motion/react";
-import { translateText } from "../translateFunc";
 
 
 function MealComponent({product}) {
   const [translatedDescription, setTranslatedDescription] = useState("");
-  // useEffect(async() => {
-  //   const res = await fetch("https://libretranslate.com/translate", {
-  //     method: "POST",
-  //     body: JSON.stringify({
-  //       q: "may name is",
-  //       source: "auto",
-  //       target: "ar",
-  //       format: "text",
-  //       alternatives: 3,
-  //       api_key: ""
-  //     }),
-  //     headers: { "Content-Type": "application/json" }
-  //   });
-    
-  //   console.log(await res.json());
-  // },[product])
   return (
     <div className="md:flex flex-col items-center   to-gray-900 text-white  rounded-lg shadow-lg max-w-sm mx-auto relative hidden">
       {/* Meal Name */}
