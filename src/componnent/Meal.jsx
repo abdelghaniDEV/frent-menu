@@ -7,7 +7,7 @@ function MealComponent({product}) {
   return (
     <div className="md:flex flex-col items-center   to-gray-900 text-white  rounded-lg shadow-lg max-w-sm mx-auto relative hidden">
       {/* Meal Name */}
-      <h1 className="text-[50px] font-[600] mb-4 text-center text-white z-[1000]">
+      <h1 className="text-[40px] font-[600] mb-4 text-center text-white z-[1000]">
         {product?.name}
       </h1>
 
@@ -29,7 +29,7 @@ function MealComponent({product}) {
         </h1>
       </div>
       {/* Ingredients */}
-      <div className="flex justify-center flex-col gap-[10px] w-full  mt-4">
+      <div className="flex justify-center flex-col gap-[10px] w-full  mt-2 text-center">
         <div className="flex flex-col gap-2">
           <p>
            {product?.description}

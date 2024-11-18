@@ -13,7 +13,7 @@ function MealCart({product , setProduct}) {
             className="px-5 flex flex-col w-[220px] md:w-full md:gap-2"
           >
             <div className="flex items-center justify-between text-[18px]">
-              <h1 className="text-[20px] font-[600]">{product.name}</h1>
+              <h1 className="text-[18px] font-[500]">{product.name}</h1>
               <span className="text-[20px] md:flex items-center font-[600] hidden md:block">
               <i className="bx bx-shekel"></i>
               {product.price}
@@ -35,18 +35,9 @@ function MealCart({product , setProduct}) {
             />
           </div>
         </div>
-        {/* <p className="text-[13px] leading-[16px] px-5 pb-4 hidden ">
-        {desc.split("").map((char, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.4 }}
-              >
-                {char}
-              </motion.span>
-            ))}
-        </p> */}
+       <div className="px-3 py-1">
+          <p className="text-[13px]">{product.description}</p>
+       </div>
       </div>
     </div>
   );
