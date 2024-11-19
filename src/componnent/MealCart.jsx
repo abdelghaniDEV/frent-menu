@@ -5,11 +5,11 @@ import MealComponent from "./Meal";
 function MealCart({ product, setProduct }) {
   const [oppenImage, setOpenImage] = useState(false);
   return (
-    <div className="" onClick={() => (
-      setProduct(product),
-      setOpenImage(true)
-    )}>
-      <div className="border-b-[1px] items-center bg-[#373632] md:bg-inherit md:py-5   hover:bg-[#373632] cursor-pointer ">
+    <div className="" onClick={() => {
+      ;
+            setProduct(product)
+    }}>
+      <div onClick={() => setOpenImage(true)} className="border-b-[1px] items-center bg-[#373632] md:bg-inherit md:py-5   hover:bg-[#373632] cursor-pointer ">
         <div className="flex justify-between items-center">
           <div
             initial={{ x: "-100vw", opacity: 0 }}
@@ -50,7 +50,7 @@ function MealCart({ product, setProduct }) {
         </div>
       </div>
       {oppenImage && (
-        <div className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-full  bg-[rgba(0,0,0,0.64)] z-50">
+        <div onClick={() => setOpenImage(false)} className="md:hidden fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-full  bg-[rgba(0,0,0,0.64)] z-50">
         
           <img src={product?.image} className="h-[350px]" />
           <div className="flex flex-col items-center text-center px-2 border-[3px] rounded-[20px] border-[#DBA782] mx-5 relative text-black bg-white ">
