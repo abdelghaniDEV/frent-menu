@@ -43,7 +43,7 @@ function MealComponent({product}) {
       {/* Image Section with Shadow */}
       <motion.div
       key={product?.image}
-        className="relative mb-  "
+        className="relative mb-   "
         initial={{ x: "100vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}

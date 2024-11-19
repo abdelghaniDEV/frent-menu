@@ -35,10 +35,10 @@ function App() {
   };
 
   return (
-    <div className="text-white  container  my-[20px]">
+    <div className="text-white  container  my-[20px] overflow-hidden">
       <Header />
       <div className="flex gap-[20px] items-start mt-[20px] md:mt-[1\0vh] ">
-        <div className="md:w-[450px] md:overflow-scroll w-full ">
+        <div className="md:w-[450px]  ">
           <div className="bg-[#7B5D49] border-[1px] text-[15px]  justify-between p-2  border-b-[1px]">
             <ul className="flex items-center flex-wrap gap-2 justify-center font- font-[500] ">
               {categories.map((category) => {
@@ -54,7 +54,7 @@ function App() {
               })}
             </ul>
           </div>
-          <div className="bg-[#13120F] md:max-h-[650px] border-[1px]  custom-scroll   ">
+          <div className="bg-[#13120F] md:max-h-[650px] md:overflow-y-scroll w-full md:custom-scroll border-[1px] ">
             {productFilter?.map((product) => {
               return <MealCart setProduct={setProduct} product={product} />;
             })}
