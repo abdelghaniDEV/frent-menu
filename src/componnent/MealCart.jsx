@@ -5,7 +5,10 @@ import MealComponent from "./Meal";
 function MealCart({ product, setProduct }) {
   const [oppenImage, setOpenImage] = useState(false);
   return (
-    <div className="" onClick={() => setProduct(product)}>
+    <div className="" onClick={() => (
+      setProduct(product),
+      setOpenImage(true)
+    )}>
       <div className="border-b-[1px] items-center bg-[#373632] md:bg-inherit md:py-5   hover:bg-[#373632] cursor-pointer ">
         <div className="flex justify-between items-center">
           <div
@@ -31,7 +34,7 @@ function MealCart({ product, setProduct }) {
           </div>
           <div
             className="relative md:hidden w-[30%] border-l-[1px] "
-            onClick={() => setOpenImage(true)}
+            // onClick={() => setOpenImage(true)}
           >
             <motion.img
               src={product.image}
