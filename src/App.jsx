@@ -6,7 +6,6 @@ import Header from "./componnent/Header";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "./redux/slices/categories.slice";
 import { fetchProducts } from "./redux/slices/products.slice";
-import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
     dispatch(fetchProducts());
   }, []);
 
-  
+
   const categories = useSelector((state) => state.categories);
   const products = useSelector((state) => state.products);
 
