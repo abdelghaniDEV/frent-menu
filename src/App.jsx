@@ -19,6 +19,7 @@ function App() {
     dispatch(fetchProducts());
   }, []);
 
+  
   const categories = useSelector((state) => state.categories);
   const products = useSelector((state) => state.products);
 
