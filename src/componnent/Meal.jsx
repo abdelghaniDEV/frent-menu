@@ -19,7 +19,7 @@ function MealComponent({product}) {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <div className="absolute h-[400px] w-[400px]   rounded-full "></div>
-        <img src={product?.image} alt="Meal" className="relative w-[400px] z-[2000] " />
+        <img src={product?.image} alt="Meal" className="relative w-[300px] z-[2000] " />
         <div className="absolute w-[10px] h-[10px] z-0 rounded-full shadow-[0px_0px_400px_150px_rgba(255,165,0,0.5)]  top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"></div>
       </motion.div>
       <div>
