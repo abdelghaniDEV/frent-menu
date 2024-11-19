@@ -10,16 +10,16 @@ function MealCart({ product, setProduct }) {
             initial={{ x: "-100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="px-5 py-3 md:py-0 flex flex-col  md:w-full md:gap-2"
+            className="px-5   md:py-0 flex flex-col w-[70%]  md:w-full md:gap-2"
           >
             <div className="flex items-center justify-between text-[18px]">
               <h1 className="text-[18px] font-[500]">{product.name}</h1>
-              <span className="text-[20px] flex items-center font-[600] block">
+              <span className="text-[20px]  md:block md:flex items-center font-[600] ">
                 <i className="bx bx-shekel"></i>
                 {product.price}
               </span>
             </div>
-            <p className=" leading-[16px] text-[15px] md:text-[18px] font-[200]  md:block">
+            <p className=" leading-[16px] text-[12px] md:text-[18px] font-[200]  md:block">
               {product.description}
             </p>
             <span className="text-[20px] flex items-center font-[600] hidden">
@@ -27,14 +27,15 @@ function MealCart({ product, setProduct }) {
               {product.price}
             </span>
           </div>
-          <div className="hidden">
+          <div className="relative md:hidden w-[30%] border-l-[1px] ">
             <motion.img
               src={product.image}
-              className="w-[140px]"
+              className="  h-[100px] "
               initial={{ x: "100vw", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
             />
+          
           </div>
         </div>
         <div className="px-3 py-1 hidden">

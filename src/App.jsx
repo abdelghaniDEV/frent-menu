@@ -6,6 +6,8 @@ import Header from "./componnent/Header";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "./redux/slices/categories.slice";
 import { fetchProducts } from "./redux/slices/products.slice";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   const [selectCategory, setSelectCategory] = useState("");
