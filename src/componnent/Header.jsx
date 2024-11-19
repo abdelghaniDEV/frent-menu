@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo-01@4x.png";
-import logo01 from "../assets/logo04.png";
+import logo01 from "../assets/logo-ftt.png";
 import rest from "../assets/rest.jpg";
 export default function Header() {
   return (
@@ -18,7 +18,7 @@ export default function Header() {
           <div className="text-[34px] flex flex-col gap-3">
             <h3 className="font-Dancing">Welcom Our</h3>
             <h1 className="font-bebas leading-3 text-[40px] text-[#DCA57E]">
-              Resturant
+              Resturant & Bar
             </h1>
           </div>
         </div>

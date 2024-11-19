@@ -9,7 +9,7 @@ function MealCart({ product, setProduct }) {
       ;
             setProduct(product)
     }}>
-      <div onClick={() => setOpenImage(true)} className="border-b-[1px] items-center bg-[#373632] md:bg-inherit md:py-5   hover:bg-[#373632] cursor-pointer ">
+      <div onClick={() => setOpenImage(true)} className="border-b-[1px] items-center bg-[#7b5d495e] md:bg-inherit md:py-5   hover:bg-[#373632] cursor-pointer ">
         <div className="flex justify-between items-center">
           <div
             initial={{ x: "-100vw", opacity: 0 }}
@@ -24,7 +24,7 @@ function MealCart({ product, setProduct }) {
                 {product.price}
               </span>
             </div>
-            <p className=" leading-[16px] text-[12px] md:text-[18px] font-[200]  md:block">
+            <p className=" leading-[16px] text-[12px] md:text-[18px] font-[600]  md:block">
               {product.description}
             </p>
             <span className="text-[20px] flex items-center font-[600] hidden">
