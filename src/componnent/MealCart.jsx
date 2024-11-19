@@ -10,9 +10,9 @@ function MealCart({ product, setProduct }) {
             initial={{ x: "-100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="px-5   md:py-0 flex flex-col w-[70%]  md:w-full md:gap-2"
+            className="md:px-5 px-2   md:py-0 flex flex-col w-[70%]  md:w-full md:gap-2"
           >
-            <div className="flex items-center justify-between text-[18px]">
+            <div className="flex md:items-center justify-between text-[18px]">
               <h1 className="text-[18px] font-[500]">{product.name}</h1>
               <span className="text-[20px]  md:block md:flex items-center font-[600] ">
                 <i className="bx bx-shekel"></i>
