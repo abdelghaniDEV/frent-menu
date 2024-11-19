@@ -36,7 +36,7 @@ function App() {
   };
 
   return (
-    <div className="text-white  container  my-[20px] overflow-hidden bg-[url('/bg-des.jpg')] bg-cover bg-center h-screen"
+    <div className="text-white  container bg-[url('/bg-des.jpg')] bg-cover bg-center "
     >
       <Header />
       <div className="flex gap-[20px] items-start mt-[20px] md:mt-[1\0vh] ">

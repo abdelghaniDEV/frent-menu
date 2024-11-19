@@ -6,7 +6,6 @@ function MealCart({ product, setProduct }) {
   const [oppenImage, setOpenImage] = useState(false);
   return (
     <div className="" onClick={() => {
-      ;
             setProduct(product)
     }}>
       <div onClick={() => setOpenImage(true)} className="border-b-[1px] items-center  md:bg-inherit md:py-5    cursor-pointer ">
