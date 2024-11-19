@@ -9,7 +9,7 @@ function MealCart({ product, setProduct }) {
       ;
             setProduct(product)
     }}>
-      <div onClick={() => setOpenImage(true)} className="border-b-[1px] items-center bg-[#7b5d495e] md:bg-inherit md:py-5   hover:bg-[#373632] cursor-pointer ">
+      <div onClick={() => setOpenImage(true)} className="border-b-[1px] items-center  md:bg-inherit md:py-5    cursor-pointer ">
         <div className="flex justify-between items-center">
           <div
             initial={{ x: "-100vw", opacity: 0 }}
