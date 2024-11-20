@@ -8,7 +8,7 @@ function MealCart({ product, setProduct }) {
     <div className="" onClick={() => {
             setProduct(product)
     }}>
-      <div onClick={() => setOpenImage(true)} className="border-b-[1px] items-center  md:bg-inherit md:py-5    cursor-pointer ">
+      <div onClick={() => setOpenImage(true)} className="border-b-[1px] items-center  md:bg-inherit md:py-3    cursor-pointer ">
         <div className="flex justify-between items-center">
           <div
             initial={{ x: "-100vw", opacity: 0 }}
@@ -23,7 +23,7 @@ function MealCart({ product, setProduct }) {
                 {product.price}
               </span>
             </div>
-            <p className=" leading-[16px] text-[12px] md:text-[18px] font-[600]  md:block">
+            <p className=" md:leading-[18px] text-[12px] md:text-[18px] font-[600] md:font-[400]   md:block">
               {product.description}
             </p>
             <span className="text-[20px] flex items-center font-[600] hidden">
