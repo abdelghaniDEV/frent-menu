@@ -64,7 +64,7 @@ function App() {
         </div>
       ) : (
         <div className=" min-h-screen relative">
-          <div role="status" className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+          <div role="status" className="absolute top-[35%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <svg
               aria-hidden="true"
               class="w-[100px] h-[100px] text-gray-200 animate-spin dark:text-gray-600 fill-[#DCA57E]"
@@ -81,7 +81,7 @@ function App() {
                 fill="currentFill"
               />
             </svg>
-            <span class="sr-only">Loading...</span>
+            <span className="sr-only">Loading...</span>
           </div>
         </div>
       )}
