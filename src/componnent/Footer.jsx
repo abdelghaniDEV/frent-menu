@@ -2,8 +2,10 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='text-center md:py-2 md:border-[1px] mt-6 z-[3000]'>
-        <h1>Create By fablux group</h1>
+    <div className=' md:py-2 md:border-[1px] mt-6   '>
+        <div className='flex items-center justify-center absolute bottom-0 left-[50%] translate-x-[-50%] '>
+        <a href='https://www.instagram.com/fabluxgroup?igsh=YnpxbWgyemE1cDN6' className='text-center'>Create By fablux group</a>
+        </div>
     </div>
   )
 }
