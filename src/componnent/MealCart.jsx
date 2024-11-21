@@ -38,9 +38,9 @@ function MealCart({ product, setProduct }) {
             <motion.img
               src={product.image}
               className="  h-[100px] "
-              initial={{ x: "100vw", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 , ease: "easeOut" }}
             />
           </div>
         </div>
