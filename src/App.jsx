@@ -52,6 +52,7 @@ function App() {
               {categories.map((category) => {
                 return (
                   <li
+                  
                     onClick={() => {
                       filterBayMainCategory(category.name);
                       setCategoryClick(category);
