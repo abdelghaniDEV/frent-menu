@@ -47,6 +47,7 @@ function App() {
       {products.length > 0 ? (
         <div className="flex gap-[20px] items-start mt-[20px] md:mt-[1\0vh] min-h-screen ">
         <div className="md:w-[450px]  ">
+        
           <div className="bg-[#7b5d499e] border-[1px] text-[15px]  justify-between p-2  border-b-[1px]">
             <ul className="flex flex-wrap gap-2 justify-center font- font-[500] ">
               {categories.map((category) => {
